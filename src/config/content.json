@@ -1,0 +1,558 @@
+{
+    "version": 2,
+    "appbar-1": {
+        "en": [
+            {
+                "name": "Community",
+                "link": "/community",
+                "target": "_blank"
+            },
+            {
+                "name": "Thought Leadership",
+                "link": "/medium?",
+                "target": "_blank"
+            },
+            {
+                "name": "Spool dApp",
+                "link": "/spooldapp",
+                "target": "_blank"
+            },
+            {
+                "name": "Request a Demo",
+                "target": "_self",
+                "link": "#"
+            }
+        ]
+    },
+    "hero-1": {
+        "en": {
+            "header": "Your gateway to Institutional-Grade DeFi.",
+            "main": "Customized, diversified, risk-mitigated DeFi products. Set to your standard, optimized for your clients.",
+            "cta": {
+                "name": "Get in Touch",
+                "link": "/",
+                "target": "_blank"
+            },
+            "background": {
+                "image": "hero",
+                "scale": 1,
+                "align": "center"
+            },
+            "size": {
+                "desktop": 12,
+                "mobile": 12
+            }
+        }
+    },
+    "teaser-1": {
+        "en": {
+            "header": "DeFi Banking as a Service.",
+            "main": "Infrastructure to build customized financial products that are risk-managed and adhere to your regulatory requirements.",
+            "background": {
+                "image": "teaser_green",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 12,
+                "mobile": 12
+            }
+        }
+    },
+    "teaser-2": {
+        "en": {
+            "header": "White-Label Solution.",
+            "main": "De-Fi is simple here. Offer optimized yields to your user base via a non-custodial banking service, with full API integrations available.",
+            "background": {
+                "image": "teaser_green",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 6,
+                "mobile": 12
+            }
+        }
+    },
+    "teaser-3": {
+        "en": {
+            "header": "Infrastructure for DeFi.",
+            "main": "Build a solution that enables your clients to gain exposure to DeFi, with the infrastructure you’d expect in traditional financial services.",
+            "background": {
+                "image": "teaser_green",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 6,
+                "mobile": 12
+            }
+        }
+    },
+    "hero-2": {
+        "en": {
+            "header": "Take Your DeFi Investment Offering to the Next Level.",
+            "main": "Provide innovation through a fully white-labeled DeFi product tailored to your user base.",
+            "background": {
+                "image": "hero",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 12,
+                "mobile": 12
+            }
+        }
+    },
+    "feature-1": {
+        "en": {
+            "header": "Treasury Management",
+            "main": "Avoid fluctuations in cryptocurrency prices by keeping your funds in stablecoins and leverage those assets using yield-farming.",
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 6,
+                "mobile": 12
+            }
+        }
+    },
+    "feature-2": {
+        "en": {
+            "header": "Integrated Website Widget",
+            "main": "Bring Smart Vault technology into your product suite through fully white-labelled solutions matched to your brand and goals.",
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 6,
+                "mobile": 12
+            }
+        }
+    },
+    "contact-1": {
+        "en": {
+            "header": "Your DeFi Yeild ToolBox",
+            "main": "Feel as though you need more tailored options?",
+            "cta": "Let's Talk",
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 6,
+                "mobile": 12
+            }
+        }
+    },
+    "feature-3": {
+        "en": {
+            "header": "KYC Enabled Smart Vaults",
+            "main": "Offer gated custom Smart Vaults to your users, only accessible to those who have completed your KYC requirements and who have adhered to your process.",
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 6,
+                "mobile": 12
+            }
+        }
+    },
+    "hero-3": {
+        "en": {
+            "header": "Infrastructure, and Beyond.",
+            "main": "Bring Smart Vault technology into your product suite and customize the infrastructure to adhere to regulatory requirements in your jurisdiction.",
+            "background": {
+                "image": "hero",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 12,
+                "mobile": 12
+            }
+        }
+    },
+    "teaser-4": {
+        "en": {
+            "header": "Traditional Banking Institutions",
+            "main": "Understand and prioritize your risk management strategy with automated reallocation based on your preferences.",
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 6,
+                "mobile": 12
+            }
+        }
+    },
+    "teaser-5": {
+        "en": {
+            "header": "Crypto-Native Institutional Investors",
+            "main": "Leverage the assets you hold while being safe in the knowledge they can be rehypothecated at any time if you need them.",
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 6,
+                "mobile": 12
+            }
+        }
+    },
+    "teaser-6": {
+        "en": {
+            "header": "Web3 and Decentralised Service Treasuries",
+            "main": "Manage your DAO, NFT project, or cryptocurrency reserve treasury safely and securely, with minimal manual processing, while maintaining access at all times.",
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 6,
+                "mobile": 12
+            }
+        }
+    },
+    "teaser-7": {
+        "en": {
+            "header": "Private Investors",
+            "main": "Keep returns growing, even in bear markets, through yield-farming stablecoins safely and securely, until you need them.",
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 6,
+                "mobile": 12
+            }
+        }
+    },
+    "hero-4": {
+        "en": {
+            "sub": "With the hunt for sustainable DeFi yields greater than ever, firms need the opportunity to truly customize their offerings. Spool’s infrastructure enables adaptable yield sources - whilst getting the most out of the market.",
+            "cta": {
+                "name": "Let us know your desired outcome",
+                "link": "#"
+            },
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 12,
+                "mobile": 12
+            }
+        }
+    },
+    "hero-5": {
+        "en": {
+            "header": "Risk-Managed DeFi Yields - via Smart Vault Technology.",
+            "main": "Secure risk-managed DeFi yield investment strategies to improve your returns, regardless of market conditions.",
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 12,
+                "mobile": 12
+            }
+        }
+    },
+    "dappBox": null,
+    "hero-6": {
+        "en": {
+            "header": "Audited by the Best in the Business, for Your Safety and Security.",
+            "main": "Quantstamp, Zokyo and Peckshield all ensure our code is the quality you need it to be.",
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 12,
+                "mobile": 12
+            }
+        }
+    },
+    "hero-7": {
+        "en": {
+            "sub": "With zero costs and little time, Spool Smart Vaults enable a no-code solution for you to create custom fully-automated smart contracts that automatically keep you in complete custodial control - at all times. ",
+            "cta": {
+                "name": "Request a Demo",
+                "link": "#"
+            },
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 12,
+                "mobile": 12
+            }
+        }
+    },
+    "hero-8": {
+        "en": {
+            "header": "Build with us.",
+            "main": "Become a part of Spool's ever-expanding infrastructure. Submit your risk model, yield strategy, vote and govern the DAO. We are even more remarkable together.",
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 12,
+                "mobile": 12
+            }
+        }
+    },
+    "feature-4": {
+        "en": {
+            "header": "Bring Your Yield Generator to the masses.",
+            "main": "Reach more investors by becoming part of the Spool investment ecosystem.",
+            "cta": {
+                "name": "Learn More",
+                "link": "#"
+            },
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 4,
+                "mobile": 12
+            }
+        }
+    },
+    "feature-5": {
+        "en": {
+            "header": "Submit Your Risk Matrices.",
+            "main": "Be part of bringing full risk management into DeFi, & earn by doing so.",
+            "cta": {
+                "name": "Learn More",
+                "link": "#"
+            },
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 4,
+                "mobile": 12
+            }
+        }
+    },
+    "feature-6": {
+        "en": {
+            "header": "Be Part of Something Bigger Through Spool DAO.",
+            "main": "Reach more investors by becoming part of the Spool investment ecosystem.",
+            "cta": {
+                "name": "Learn More",
+                "link": "#"
+            },
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 4,
+                "mobile": 12
+            }
+        }
+    },
+    "hero-9": {
+        "en": {
+            "header": "Already Integrated with Spool.",
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 12,
+                "mobile": 12
+            }
+        }
+    },
+    "logos-1": {
+        "en": [
+            {
+                "name": "logo-1",
+                "image": "logo",
+                "size": {
+                    "desktop": 2,
+                    "mobile": 2
+                }
+            }
+        ]
+    },
+    "hero-10": {
+        "en": {
+            "header": "Spool in the Headlines.",
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 12,
+                "mobile": 12
+            }
+        }
+    },
+    "logos-2": {
+        "en": [
+            {
+                "name": "logo-1",
+                "image": "logo",
+                "size": {
+                    "desktop": 2,
+                    "mobile": 2
+                }
+            }
+        ]
+    },
+    "hero-11": {
+        "en": {
+            "header": "Start Innovating for Your Clients.",
+            "main": "Choose one of our specialist consultants based on your needs. You define the goals, we build the solution.",
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 12,
+                "mobile": 12
+            }
+        }
+    },
+    "people-1": {
+        "en": [
+            {
+                "header": "Based in the American Regions?",
+                "name": {
+                    "first": "Priscila",
+                    "last": "Iwakawa"
+                },
+                "title": "Head of the American Markets",
+                "picture": "pri_1",
+                "background": {
+                    "image": "feature",
+                    "align": "center"
+                },
+                "size": {
+                    "desktop": 4,
+                    "mobile": 12
+                }
+            },
+            {
+                "header": "Are you an Institution Looking to Leverage DeFi?",
+                "name": {
+                    "first": "Simon",
+                    "last": "Schaber"
+                },
+                "title": "Chief Business Development Officer",
+                "picture": "simon_1",
+                "background": {
+                    "image": "feature",
+                    "align": "center"
+                },
+                "size": {
+                    "desktop": 4,
+                    "mobile": 12
+                }
+            },
+            {
+                "header": "Are you a DAO or DeFi Protocol?",
+                "name": {
+                    "first": "Joshua",
+                    "last": "Bate"
+                },
+                "title": "Head of DeFi Intregration",
+                "picture": "josn_1",
+                "background": {
+                    "image": "feature",
+                    "align": "center"
+                },
+                "size": {
+                    "desktop": 4,
+                    "mobile": 12
+                }
+            }
+        ]
+    },
+    "hero-12": {
+        "en": {
+            "header": "Latest Updates and Market Insights",
+            "background": {
+                "image": "feature",
+                "align": "center"
+            },
+            "size": {
+                "desktop": 12,
+                "mobile": 12
+            }
+        }
+    },
+    "posts-1": {
+        "en": [
+            {
+                "sub": "DeFi Market Insights",
+                "header": "How a Spool Smart Vault is Created",
+                "main": "At Spool, our goal has always been to create a true DAO, leading the industry in decentralised governance. With the support of our legal…",
+                "cta": "Read More",
+                "picture": "post_1",
+                "background": {
+                    "image": "feature",
+                    "align": "center"
+                },
+                "size": {
+                    "desktop": 3,
+                    "mobile": 12
+                }
+            },
+            {
+                "sub": "DeFi Market Insights",
+                "header": "From Foundation to DAO — Protecting the Move to Full Decentralisation",
+                "main": "Every DLT, DAO and cryptocurrency project has a similar issue when they first launch. Until they achieve natural decentralisation, they…",
+                "cta": "Read More",
+                "picture": "post_2",
+                "background": {
+                    "image": "feature",
+                    "align": "center"
+                },
+                "size": {
+                    "desktop": 3,
+                    "mobile": 12
+                }
+            },
+            {
+                "sub": "DeFi Market Insights",
+                "header": "Spool Creating a True DAO, with the Right Legal Backing",
+                "main": "At Spool, our goal has always been to create a true DAO, leading the industry in decentralised governance. With the support of our legal…",
+                "cta": "Read More",
+                "picture": "post_3",
+                "background": {
+                    "image": "feature",
+                    "align": "center"
+                },
+                "size": {
+                    "desktop": 3,
+                    "mobile": 12
+                }
+            },
+            {
+                "sub": "DeFi Market Insights",
+                "header": "Spool: The Gateway to Institutional-Quality DeFi",
+                "main": "Spool is the infrastructure for institutional DeFi. It enables institutional investors to create bespoke DeFi yield solutions, called…",
+                "cta": "Read More",
+                "picture": "post_4",
+                "background": {
+                    "image": "feature",
+                    "align": "center"
+                },
+                "size": {
+                    "desktop": 3,
+                    "mobile": 12
+                }
+            }
+        ]
+    },
+    "footer": null
+}

@@ -1,0 +1,76 @@
+{
+    "homepage": [
+        {
+            "component": "Appbar",
+            "items": ["appbar-1"]
+        },
+        {
+            "component": "Hero",
+            "items": ["hero-1"]
+        },
+        {
+            "component": "Teaser",
+            "items": ["teaser-1", "teaser-2", "teaser-3"]
+        },
+        {
+            "component": "Hero",
+            "items": ["hero-2"]
+        },
+        {
+            "component": "Feature",
+            "items": ["feature-1", "feature-2", "feature-3"]
+        },
+        {
+            "component": "Hero",
+            "items": ["hero-3"]
+        },
+        {
+            "component": "Teaser",
+            "items": ["teaser-4", "teaser-5", "teaser-6", "teaser-7"]
+        },
+        {
+            "component": "Hero",
+            "items": ["hero-4", "hero-5", "hero-6", "hero-7", "hero-8"]
+        },
+        {
+            "component": "Feature",
+            "items": ["feature-4", "feature-5", "feature-6"]
+        },
+        {
+            "component": "Hero",
+            "items": ["hero-9"]
+        },
+        {
+            "component": "Logos",
+            "items": ["logos-1"]
+        },
+        {
+            "component": "Hero",
+            "items": ["hero-10"]
+        },
+        {
+            "component": "Logos",
+            "items": ["logos-2"]
+        },
+        {
+            "component": "Hero",
+            "items": ["hero-11"]
+        },
+        {
+            "component": "People",
+            "items": ["people-1"]
+        },
+        {
+            "component": "Hero",
+            "items": ["hero-12"]
+        },
+        {
+            "component": "Posts",
+            "items": ["posts-1"]
+        },
+        {
+            "component": "Footer",
+            "items": ["footer-1"]
+        }
+    ]
+}
