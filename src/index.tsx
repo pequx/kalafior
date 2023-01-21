@@ -7,11 +7,21 @@ import reportWebVitals from './reportWebVitals';
 import theme from './theme';
 import content from './config/content.json';
 import layout from './config/layout.json';
+import settings from './config/settings.json'
+import { getUserLocale } from 'get-user-locale';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-const context = { content, layout, locale: 'en' }
+
+const locale = getUserLocale()
+
+const context = { 
+  content, 
+  layout, 
+  settings, 
+  locale: locale ? locale.slice(0,2) : settings.defaultLocale
+}
 const AppContext: React.Context<any> = React.createContext(context)
 
 root.render(

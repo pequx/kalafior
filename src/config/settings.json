@@ -1,4 +1,7 @@
 {
-    "version": 1,
-    "appbar": null
+    "version": 2,
+    "defaultLocale": "en",
+    "container": {
+        "maxWidth": "lg"
+    }
 }

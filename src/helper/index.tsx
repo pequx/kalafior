@@ -1,5 +1,5 @@
 import React, { Context } from 'react';
-import { ComponentDTO, ImageDTO, LayoutDTO, PaddingDTO } from "../interface";
+import { ComponentDTO, ImageDTO, LayoutDTO, PaddingDTO, ViewDTO } from "../interface";
 import theme from "../theme";
 import Appbar from '../component/Appbar';
 import Hero from '../component/Hero';
@@ -115,7 +115,7 @@ export const Layout = (props: LayoutDTO):JSX.Element => {
     const context = useContext();
     const { layout } = context;
 
-    return layout[type].map((view:any) => {
+    return layout[type].map((view:ViewDTO) => {
         const { items, component } = view; 
 
         return <Component parent={type} type={component} items={items} key={uuidv4()} />

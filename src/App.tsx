@@ -1,10 +1,14 @@
 import React from 'react';
 import Container from '@mui/material/Container';
-import { Component, Layout } from './helper';
+import { Layout } from './helper';
+import { useContext } from '.';
 
 function App() {
+  const context = useContext();
+  const { settings } = context
+
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth={settings.container.maxWidth}>
       <Layout type='homepage' />
     </Container>
   );

@@ -71,5 +71,26 @@ export type ComponentDTO = {
 
 export type LayoutDTO = {
     type: string;
-    // components: Array<ComponentDTO>;
 }
+
+export type ViewDTO = {
+    order: number;
+    component: string;
+    items: Array<string>;
+}
+
+// export type ContentContextDTO = {
+//     version: number;
+//     [string: index]: any
+// }
+
+// export type LayoutContextDTO = {
+//     version: number;
+//     [string: index]: any
+// }
+
+// export type AppContextDTO = {
+//     content: ContentContextDTO;
+//     layout: LayoutContextDTO;
+//     locale: string;
+// }
