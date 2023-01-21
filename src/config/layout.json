@@ -1,74 +1,93 @@
 {
+    "version": 1,
     "homepage": [
-        {
+        {  
+            "order": 1,
             "component": "Appbar",
             "items": ["appbar-1"]
         },
         {
+            "order": 2,
             "component": "Hero",
             "items": ["hero-1"]
         },
         {
+            "order": 3,
             "component": "Teaser",
             "items": ["teaser-1", "teaser-2", "teaser-3"]
         },
         {
+            "order": 4,
             "component": "Hero",
             "items": ["hero-2"]
         },
         {
+            "order": 5,
             "component": "Feature",
             "items": ["feature-1", "feature-2", "feature-3"]
         },
         {
+            "order": 6,
             "component": "Hero",
             "items": ["hero-3"]
         },
         {
+            "order": 7,
             "component": "Teaser",
             "items": ["teaser-4", "teaser-5", "teaser-6", "teaser-7"]
         },
         {
+            "order": 8,
             "component": "Hero",
             "items": ["hero-4", "hero-5", "hero-6", "hero-7", "hero-8"]
         },
         {
+            "order": 9,
             "component": "Feature",
             "items": ["feature-4", "feature-5", "feature-6"]
         },
         {
+            "order": 10,
             "component": "Hero",
             "items": ["hero-9"]
         },
         {
+            "order": 10,
             "component": "Logos",
             "items": ["logos-1"]
         },
         {
+            "order": 11,
             "component": "Hero",
             "items": ["hero-10"]
         },
         {
+            "order": 12,
             "component": "Logos",
             "items": ["logos-2"]
         },
         {
+            "order": 13,
             "component": "Hero",
             "items": ["hero-11"]
         },
         {
+            "order": 14,
             "component": "People",
             "items": ["people-1"]
         },
         {
+            "order": 15,
             "component": "Hero",
             "items": ["hero-12"]
         },
         {
+            "order": 16,
             "component": "Posts",
             "items": ["posts-1"]
         },
         {
+            "order": 17,
             "component": "Footer",
             "items": ["footer-1"]
         }

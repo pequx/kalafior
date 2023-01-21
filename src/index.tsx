@@ -5,24 +5,25 @@ import { ThemeProvider } from '@mui/material/styles';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import theme from './theme';
-import content from './config/content.json'
+import content from './config/content.json';
+import layout from './config/layout.json';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-
-const Context: React.Context<any> = React.createContext(content)
+const context = { content, layout, locale: 'en' }
+const AppContext: React.Context<any> = React.createContext(context)
 
 root.render(
   <ThemeProvider theme={theme}>
-    <Context.Provider value={content}>
+    <AppContext.Provider value={context}>
       <CssBaseline />
       <App />
-    </Context.Provider>
+    </AppContext.Provider>
   </ThemeProvider>,
 );
 
-export const useContext = () => React.useContext(Context);
+export const useContext = () => React.useContext(AppContext);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

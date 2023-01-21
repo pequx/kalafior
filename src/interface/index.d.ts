@@ -66,4 +66,10 @@ export type PaddingDTO = {
 export type ComponentDTO = {
     type: string;
     items:Array<any>
+    parent: string;
+}
+
+export type LayoutDTO = {
+    type: string;
+    // components: Array<ComponentDTO>;
 }

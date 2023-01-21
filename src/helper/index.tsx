@@ -1,5 +1,5 @@
 import React, { Context } from 'react';
-import { ComponentDTO, ImageDTO, PaddingDTO } from "../interface";
+import { ComponentDTO, ImageDTO, LayoutDTO, PaddingDTO } from "../interface";
 import theme from "../theme";
 import Appbar from '../component/Appbar';
 import Hero from '../component/Hero';
@@ -59,48 +59,47 @@ export const paddingHelper = (padding: PaddingDTO): any => {
 }
 
 export const Component = (props: ComponentDTO):JSX.Element => {
-    const { type, items } = props;
-
+    const { type, items, parent } = props;
     const context = useContext();
-    const locale = 'en';
+    const { content, locale } = context;
 
     switch (type) {
         case 'Appbar':
-            return <Appbar items={context[items[0]][locale]} key={uuidv4()} />
+            return <Appbar items={content[parent][items[0]][locale]} key={uuidv4()} />
         case 'Hero':
             return <Grid container>
-                {items.map((content: string) => 
-                    <Hero item={context[content][locale]} key={uuidv4()}/>
+                {items.map((item: string) => 
+                    <Hero item={content[parent][item][locale]} key={uuidv4()}/>
                 )}
             </Grid>
         case 'Teaser':
             return <Grid container>
-                {items.map((content: string) => 
-                    <Teaser item={context[content][locale]} key={uuidv4()}/>
+                {items.map((item: string) => 
+                    <Teaser item={content[parent][item][locale]} key={uuidv4()}/>
                 )}
             </Grid>
         case 'Feature':
             return <Grid container>
-                {items.map((content: string) => 
-                    <Feature item={context[content][locale]} key={uuidv4()}/>
+                {items.map((item: string) => 
+                    <Feature item={content[parent][item][locale]} key={uuidv4()}/>
                 )}
             </Grid>
         case 'Logos':
             return <Grid container>
-                {items.map((content: string) => 
-                    <Logos items={context[content][locale]} key={uuidv4()}/>
+                {items.map((item: string) => 
+                    <Logos items={content[parent][item][locale]} key={uuidv4()}/>
                 )}
             </Grid>
         case 'People':
             return <Grid container>
-                {items.map((content: string) => 
-                    <People items={context[content][locale]} key={uuidv4()}/>
+                {items.map((item: string) => 
+                    <People items={content[parent][item][locale]} key={uuidv4()}/>
                 )}
             </Grid>
         case 'Posts':
-            return <Grid container maxWidth='lg'>
-                {items.map((content: string) => 
-                    <Posts items={context[content][locale]} key={uuidv4()}/>
+            return <Grid container>
+                {items.map((item: string) => 
+                    <Posts items={content[parent][item][locale]} key={uuidv4()}/>
                 )}
             </Grid>
         case 'Footer':
@@ -108,4 +107,17 @@ export const Component = (props: ComponentDTO):JSX.Element => {
         default:
             return <LinearProgress />
     }
+}
+
+
+export const Layout = (props: LayoutDTO):JSX.Element => {
+    const { type } = props;
+    const context = useContext();
+    const { layout } = context;
+
+    return layout[type].map((view:any) => {
+        const { items, component } = view; 
+
+        return <Component parent={type} type={component} items={items} key={uuidv4()} />
+    })
 }
