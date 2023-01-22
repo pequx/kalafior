@@ -12,5 +12,47 @@
     },
     "container": {
         "maxWidth": false
+    },
+    "meta": {
+        "charset": "utf-8",
+        "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "viewport": "width=device-width, initial-scale=1",
+        "title": {
+            "en": "Spool - Your Gateway to Insitutional DeFi"
+        },
+        "description": {
+            "en": "Spool is permissionless and non-custodial middleware that allows banks, fintech, funds, exchanges, custodians, treasuries, and builders to earn DeFi returns in a fully composable manner."
+        },
+        "author": {
+            "en": "Spool Finance"
+        },
+        "rating": "general",
+        "generator": {
+            "en": "Spool Finance"
+        },
+        "copyright": {
+            "en": "Spool Finance"
+        },
+        "twitter:card": {
+            "en": "Spool Finance"
+        },
+        "twitter:site": {
+            "en": "@SpoolFi"
+        },
+        "twitter:creator": {
+            "en": "@SpoolFi"
+        },
+        "og:url": {
+            "en": "https://spool.fi"
+        },
+        "og:title": {
+            "en": "Spool - Your Gateway to Insitutional DeFi"
+        },
+        "og:description": {
+            "en": "Spool is permissionless and non-custodial middleware that allows banks, fintech, funds, exchanges, custodians, treasuries, and builders to earn DeFi returns in a fully composable manner."
+        },
+        "og:image": {
+            "en": "lirem"
+        }
     }
 }

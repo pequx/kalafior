@@ -10,6 +10,7 @@ import layout from './config/layout.json';
 import settings from './config/settings.json'
 import { getUserLocale } from 'get-user-locale';
 import { v4 as uuidv4 } from 'uuid';
+import { Helmet } from "react-helmet";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -26,12 +27,14 @@ const context = {
 const AppContext: React.Context<any> = React.createContext(context)
 
 root.render(
-  <ThemeProvider theme={theme}>
-    <AppContext.Provider value={context}>
-      <CssBaseline />
-      <App />
-    </AppContext.Provider>
-  </ThemeProvider>,
+  <React.Fragment>
+    <ThemeProvider theme={theme}>
+      <AppContext.Provider value={context}>
+        <CssBaseline />
+        <App />
+      </AppContext.Provider>
+    </ThemeProvider>
+  </React.Fragment>,
 );
 
 export const useContext = () => React.useContext(AppContext);
