@@ -159,8 +159,14 @@ const theme:Theme = createTheme({
     MuiButton: {
       styleOverrides: {
         sizeSmall: {
-          background: '#FFFFF',
+          background: 'linear-gradient(90deg, #24C1F2 0%, #1DEDD4 100%)',
           borderRadius: '30px',
+          fontSize: '1rem',
+          paddingLeft: '32px',
+          paddingRight: '32px',
+          fontWeight: 500,
+          textRendering: 'geometricPrecision',
+          color: 'white',
 
           '&:hover': {
             background: 'linear-gradient(90deg, #24C1F2 0%, #1DEDD4 100%)'

@@ -1,8 +1,10 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { PostDTO } from '../interface';
-import { Box, Grid, Paper, Typography } from '@mui/material';
-import { paddingHelper, textAlignHelper } from '../helper';
+import { Box, Button, Grid, Paper, Typography } from '@mui/material';
+import { imageHelper, paddingHelper, textAlignHelper } from '../helper';
+import Image from 'mui-image';
+import theme from '../theme';
 
 
 interface PostsDTO {
@@ -27,12 +29,25 @@ function Posts(dto:PostsDTO): JSX.Element {
                                 ...textAlignHelper('center'),
                                 ...paddingHelper({ desktop: [4,4], mobile: [4,4]}),
 
+                                borderRadius: theme.spacing(2),
+                                minHeight: theme.spacing(60),
+
                                 '&:hover': {
                                     backgroundColor: 'primary.main',
                                     opacity: [0.9, 0.8, 0.7],
                                 },
                             }}
                         >
+                            { picture ? 
+                                <Image 
+                                    src={imageHelper(picture)} 
+                                    fit='scale-down'
+                                    position='relative'
+                                    shift='right'
+                                    width='100%'
+                                    showLoading={true} 
+                                />
+                            : null }
                             <Typography variant='subtitle2'>
                                 {sub}
                             </Typography>
@@ -41,7 +56,12 @@ function Posts(dto:PostsDTO): JSX.Element {
                             </Typography>
                             <Typography variant='body2'>
                                 {main}
-                            </Typography>                           
+                            </Typography>    
+                            { cta ?                             
+                                <Button size="small">
+                                {cta.name}
+                                </Button>   
+                            : null }
                         </Paper>
                     </Grid>
                 )

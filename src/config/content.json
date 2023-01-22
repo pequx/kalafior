@@ -421,8 +421,324 @@
         "logos-1": {
             "en": [
                 {
-                    "name": "logo-1",
-                    "image": "logo",
+                    "name": "Notional",
+                    "image": {
+                        "image": "notional",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Trever",
+                    "image": {
+                        "image": "Trever",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Angle",
+                    "image": {
+                        "image": "Angle",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Idle",
+                    "image": {
+                        "image": "Idle",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Arbitrum",
+                    "image": {
+                        "image": "Arbitrum",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "UD",
+                    "image": {
+                        "image": "UD",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Morpho",
+                    "image": {
+                        "image": "Morpho",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Morpho",
+                    "image": {
+                        "image": "Morpho",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Curve",
+                    "image": {
+                        "image": "Curve",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Faculty Group",
+                    "image": {
+                        "image": "Faculty Group",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Compound",
+                    "image": {
+                        "image": "Compound",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Yearn",
+                    "image": {
+                        "image": "Yearn",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Harvest",
+                    "image": {
+                        "image": "Harvest",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Harvest",
+                    "image": {
+                        "image": "Harvest",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "DeFi Llama",
+                    "image": {
+                        "image": "DeFi Llama",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Ledger",
+                    "image": {
+                        "image": "Ledger",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Fireblocks",
+                    "image": {
+                        "image": "Fireblocks",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Convex",
+                    "image": {
+                        "image": "Convex",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Aave",
+                    "image": {
+                        "image": "Aave",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Centrality",
+                    "image": {
+                        "image": "Centrality",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Signum",
+                    "image": {
+                        "image": "Signum",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "AllianceBlock",
+                    "image": {
+                        "image": "AllianceBlock",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Energy Web",
+                    "image": {
+                        "image": "Energy Web",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Fourth Revoluton Capital",
+                    "image": {
+                        "image": "Fourth Revoluton Capital",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "CMS",
+                    "image": {
+                        "image": "CMS",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Atka",
+                    "image": {
+                        "image": "Atka",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "IDC",
+                    "image": {
+                        "image": "IDC",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
                     "size": {
                         "desktop": 2,
                         "mobile": 2
@@ -442,8 +758,108 @@
         "logos-2": {
             "en": [
                 {
-                    "name": "logo-1",
-                    "image": "logo",
+                    "name": "nasdq",
+                    "image": {
+                        "image": "nasdq",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "blockworks 1",
+                    "image": {
+                        "image": "blockworks 1",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Investing",
+                    "image": {
+                        "image": "Investing",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Hackernoon",
+                    "image": {
+                        "image": "Hackernoon",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Cryptoslate",
+                    "image": {
+                        "image": "Cryptoslate",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Benzinga",
+                    "image": {
+                        "image": "Benzinga",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Cointelegraph",
+                    "image": {
+                        "image": "Cointelegraph",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "NairaMetrics",
+                    "image": {
+                        "image": "NairaMetrics",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
+                    "size": {
+                        "desktop": 2,
+                        "mobile": 2
+                    }
+                },
+                {
+                    "name": "Yahoo! Finance",
+                    "image": {
+                        "image": "Yahoo! Finance",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
                     "size": {
                         "desktop": 2,
                         "mobile": 2
@@ -474,7 +890,15 @@
                         "last": "Iwakawa"
                     },
                     "title": "Head of the American Markets",
-                    "picture": "pri_1",
+                    "cta": {
+                        "name": "Contact Pri",
+                        "link": "#"
+                    },
+                    "picture": {
+                        "image": "Pri",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
                     "size": {
                         "desktop": 4,
                         "mobile": 12
@@ -487,7 +911,15 @@
                         "last": "Schaber"
                     },
                     "title": "Chief Business Development Officer",
-                    "picture": "simon_1",
+                    "cta": {
+                        "name": "Contact Simon",
+                        "link": "#"
+                    },
+                    "picture": {
+                        "image": "Simon",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
                     "size": {
                         "desktop": 4,
                         "mobile": 12
@@ -500,7 +932,15 @@
                         "last": "Bate"
                     },
                     "title": "Head of DeFi Intregration",
-                    "picture": "josn_1",
+                    "cta": {
+                        "name": "Contact Josh",
+                        "link": "#"
+                    },
+                    "picture": {
+                        "image": "Josh",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
                     "size": {
                         "desktop": 4,
                         "mobile": 12
@@ -523,8 +963,15 @@
                     "sub": "DeFi Market Insights",
                     "header": "How a Spool Smart Vault is Created",
                     "main": "At Spool, our goal has always been to create a true DAO, leading the industry in decentralised governance. With the support of our legal…",
-                    "cta": "Read More",
-                    "picture": "post_1",
+                    "cta": {
+                        "name": "Read More",
+                        "link": "#"
+                    },
+                    "picture": {
+                        "image": "Post1",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
                     "size": {
                         "desktop": 3,
                         "mobile": 12
@@ -534,8 +981,15 @@
                     "sub": "DeFi Market Insights",
                     "header": "From Foundation to DAO — Protecting the Move to Full Decentralisation",
                     "main": "Every DLT, DAO and cryptocurrency project has a similar issue when they first launch. Until they achieve natural decentralisation, they…",
-                    "cta": "Read More",
-                    "picture": "post_2",
+                    "cta": {
+                        "name": "Read More",
+                        "link": "#"
+                    },
+                    "picture": {
+                        "image": "Post2",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
                     "size": {
                         "desktop": 3,
                         "mobile": 12
@@ -545,8 +999,15 @@
                     "sub": "DeFi Market Insights",
                     "header": "Spool Creating a True DAO, with the Right Legal Backing",
                     "main": "At Spool, our goal has always been to create a true DAO, leading the industry in decentralised governance. With the support of our legal…",
-                    "cta": "Read More",
-                    "picture": "post_3",
+                    "cta": {
+                        "name": "Read More",
+                        "link": "#"
+                    },
+                    "picture": {
+                        "image": "Post3",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
                     "size": {
                         "desktop": 3,
                         "mobile": 12
@@ -556,8 +1017,15 @@
                     "sub": "DeFi Market Insights",
                     "header": "Spool: The Gateway to Institutional-Quality DeFi",
                     "main": "Spool is the infrastructure for institutional DeFi. It enables institutional investors to create bespoke DeFi yield solutions, called…",
-                    "cta": "Read More",
-                    "picture": "post_4",
+                    "cta": {
+                        "name": "Read More",
+                        "link": "#"
+                    },
+                    "picture": {
+                        "image": "Post4",
+                        "scale": 1,
+                        "align": "top-right"
+                    },
                     "size": {
                         "desktop": 3,
                         "mobile": 12

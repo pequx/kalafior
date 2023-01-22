@@ -1,8 +1,10 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { PersonDTO } from '../interface';
-import { Box, Grid, Paper, Typography } from '@mui/material';
-import { paddingHelper, textAlignHelper } from '../helper';
+import { Box, Button, Grid, Paper, Typography } from '@mui/material';
+import { imageHelper, paddingHelper, textAlignHelper } from '../helper';
+import theme from '../theme';
+import Image from 'mui-image';
 
 
 interface PeopleDTO {
@@ -15,7 +17,7 @@ function People(dto:PeopleDTO): JSX.Element {
     return (
         <React.Fragment>
             {items.map((item:PersonDTO): JSX.Element => {
-                const { header, name, title, link, size } = item;
+                const { header, name, title, cta, size, picture } = item;
                 const { first, last } = name;
 
                 return (
@@ -27,6 +29,9 @@ function People(dto:PeopleDTO): JSX.Element {
                                 ...textAlignHelper('center'),
                                 ...paddingHelper({ desktop: [4,4], mobile: [4,4]}),
 
+                                borderRadius: theme.spacing(2),
+                                minHeight: theme.spacing(60),
+
                                 '&:hover': {
                                     backgroundColor: 'primary.main',
                                     opacity: [0.9, 0.8, 0.7],
@@ -36,13 +41,24 @@ function People(dto:PeopleDTO): JSX.Element {
                             <Typography variant='h2'>
                                 { header }
                             </Typography>
+                            { picture ?                             
+                                <Image 
+                                    src={imageHelper(picture)} 
+                                    fit='scale-down'
+                                    position='relative'
+                                    shift='top'
+                                    width='100%'
+                                    showLoading={true} 
+                                /> : null }
                             <Typography variant='body1'>
                                 {first} {last}
                             </Typography>
                             <Typography variant='subtitle1'>
                                 {title}
                             </Typography>
-                        
+                            <Button size='medium'>
+                                {cta?.name}
+                            </Button>
                         </Paper>   
                     </Grid>
                 )

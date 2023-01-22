@@ -51,11 +51,12 @@ export interface ItemDTO extends ContentDTO {
     size: SizeDTO;
 }
 
-export interface LogoDTO extends ImageDTO {
+export type LogoDTO = {
     name?: string,
     link?: string;
     target?: Target;
     size: SizeDTO;
+    image: ImageDTO;
 }
 
 type NameDTO = {
@@ -67,8 +68,9 @@ export type PersonDTO = {
     header?: string;
     name: NameDTO;
     title?: string;
-    link?: LinkDTO;
+    cta?: LinkDTO;
     size: SizeDTO;
+    picture: ImageDTO;
 }
 
 export interface PostDTO extends ContentDTO {

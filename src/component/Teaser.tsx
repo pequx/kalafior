@@ -37,6 +37,7 @@ function Teaser(dto: TeaserDTO): JSX.Element {
                     position='relative'
                     shift='right'
                     width='10%'
+                    showLoading={true} 
                     /> 
                 : null }
                 <Typography variant='h3'>
