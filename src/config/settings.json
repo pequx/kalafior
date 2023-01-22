@@ -18,7 +18,8 @@
         "viewport": "width=device-width, initial-scale=1",
         "rating": "general",
         "title": {
-            "en": "Spool - Your Gateway to Insitutional DeFi"
+            "en": "Spool - Your Gateway to Insitutional DeFi",
+            "pl": "Spool - Twoja Droga do Insytucjonalego DeFi"
         },
         "keywords": {
             "en": "crypto,bitcoin,ethereum,arbitrum,stablecoin,DeFi,finance,middleware,bank,fintech,investment,fund"

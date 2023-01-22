@@ -29,14 +29,14 @@ function Player(dto: PlayerDTO): JSX.Element {
     <Grid item lg={size.desktop} sm={size.mobile}
       sx={{
         paddingTop: 0,
-        paddingLeft: 0
+        paddingLeft: 0,
       }}
     >
       <Paper
         component='figure'
         elevation={0}
         sx={{
-          // minHeight: theme.spacing(40),
+          // maxHeight: `calc(100% - ${theme.spacing(11)})`,
           paddingTop: 0,
           paddingLeft: 0,
           margin: 0

@@ -6,6 +6,7 @@ import '@fontsource/poppins/500.css'
 import '@fontsource/poppins/600.css'
 import { Theme, createTheme } from '@mui/material/styles';
 import settings from './config/settings.json'
+import { Height } from '@mui/icons-material'
 
 const theme:Theme = createTheme({
   typography: {

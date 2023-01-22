@@ -23,7 +23,7 @@ function Appbar(dto: AppbarDTO):JSX.Element {
     };
 
     return (
-        <AppBar position="static" elevation={12} component="nav">
+        <AppBar position='sticky' elevation={12} component="nav">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
