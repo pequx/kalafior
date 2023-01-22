@@ -19,9 +19,9 @@ function People(dto:PeopleDTO): JSX.Element {
                 const { first, last } = name;
 
                 return (
-                    <Grid item key={uuidv4()} lg={size.desktop} sm={size.mobile} component='figure'>
+                    <Grid item key={uuidv4()} lg={size.desktop} sm={size.mobile}>
                         <Paper
-                            component='figure'
+                            component='article'
                             elevation={12}
                             sx={{
                                 ...textAlignHelper('center'),

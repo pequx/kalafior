@@ -10,7 +10,7 @@
         "maxWidth": "lg"
     },
     "container": {
-        "maxWidth": "xl"
+        "maxWidth": false
     },
     "meta": {
         "charset": "utf-8",

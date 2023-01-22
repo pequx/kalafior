@@ -21,7 +21,7 @@ function Posts(dto:PostsDTO): JSX.Element {
                 return (
                     <Grid item lg={size.desktop} sm={size.mobile} key={uuidv4()}>
                         <Paper 
-                            component='figure'
+                            component='article'
                             elevation={12}
                             sx={{
                                 ...textAlignHelper('center'),
@@ -36,7 +36,7 @@ function Posts(dto:PostsDTO): JSX.Element {
                             <Typography variant='subtitle2'>
                                 {sub}
                             </Typography>
-                            <Typography variant='h4'>
+                            <Typography variant='h5'>
                                 {header}
                             </Typography>
                             <Typography variant='body2'>

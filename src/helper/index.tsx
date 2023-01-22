@@ -49,12 +49,26 @@ export const backgroundHelper = (dto:ImageDTO | undefined): any => {
 
 
 export const textAlignHelper = (align: string): any => {
-    return {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        flexFlow: 'column',
+    switch (align) {
+        case 'center': 
+            return {
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexFlow: 'column'
+            }
+        case 'left': {
+            return {
+                display: 'flex',
+                alignItems: 'left',
+                justifyContent: 'center',
+                flexFlow: 'column'
+            }
+        }
     }
+
+
+
 }
 
 export const paddingHelper = (padding: PaddingDTO): any => {

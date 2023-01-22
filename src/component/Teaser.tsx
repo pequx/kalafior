@@ -20,10 +20,11 @@ function Teaser(dto: TeaserDTO): JSX.Element {
                 sx={{
                     ...backgroundHelper(background),
                     ...textAlignHelper('center'),
-                    ...paddingHelper({ desktop: [4,4], mobile: [4,4]}),
-
-                    borderRadius: theme.spacing(2),
+                    ...paddingHelper({ desktop: [4,8], mobile: [4,4]}),
                     
+                    borderRadius: theme.spacing(2),
+                    minHeight: theme.spacing(40),
+
                     '&:hover': {
                         backgroundColor: 'primary.main',
                     },

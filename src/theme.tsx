@@ -22,40 +22,54 @@ const theme:Theme = createTheme({
     ].join(','),
     h1: {
       fontWeight: 400,
-      fontSize: '48px',
+      fontSize: '3rem',
       lineHeight: '116.7%',
       letterSpacing: '0.25px',
       fontStyle: 'normal',
       textRendering: 'geometricPrecision',
-      marginBottom: '16px'
+      marginBottom: '1.5rem',
+      textAlign: 'center'
     },
     h2: {
       fontWeight: 200,
-      fontSize: '34px',
+      fontSize: '2rem',
       lineHeight: '123.5%',
       letterSpacing: '0.25px',
       fontStyle: 'normal',
-      textRendering: 'geometricPrecision'
+      textRendering: 'geometricPrecision',
+      marginBottom: '1.5rem',
+      textAlign: 'center'
     },
     h3: {
       fontWeight: 400,
-      fontSize: '34px',
+      fontSize: '1.75rem',
       lineHeight: '123.5%',
       letterSpacing: '0.25px',
       fontStyle: 'normal',
-      textRendering: 'geometricPrecision'
+      textRendering: 'geometricPrecision',
+      marginBottom: '1.5rem'
     },
     h4: {
       fontWeight: 400,
-      fontSize: '20px',
+      fontSize: '1.5rem',
       lineHeight: '160%',
       letterSpacing: '0.15px',
       fontStyle: 'normal',
-      textRendering: 'geometricPrecision'
+      textRendering: 'geometricPrecision',
+      marginBottom: '1.5rem'
+    },
+    h5: {
+      fontWeight: 400,
+      fontSize: '1.5rem',
+      lineHeight: '160%',
+      letterSpacing: '0.15px',
+      fontStyle: 'normal',
+      textRendering: 'geometricPrecision',
+      marginBottom: '1.5rem'
     },
     subtitle1: {
       fontWeight: 200,
-      fontSize: '16px',
+      fontSize: '1rem',
       lineHeight: '175%',
       letterSpacing: '0.15px',
       fontStyle: 'normal',
@@ -63,7 +77,7 @@ const theme:Theme = createTheme({
     },
     subtitle2: {
       fontWeight: 400,
-      fontSize: '14px',
+      fontSize: '1rem',
       lineHeight: '157%%',
       letterSpacing: '0.1px',
       fontStyle: 'normal',
@@ -71,7 +85,7 @@ const theme:Theme = createTheme({
     },
     body1: {
       fontWeight: 200,
-      fontSize: '20px',
+      fontSize: '1.25rem',
       lineHeight: '150%',
       letterSpacing: '0.15px',
       fontStyle: 'normal',
@@ -79,7 +93,7 @@ const theme:Theme = createTheme({
     },
     body2: {
       fontWeight: 300,
-      fontSize: '12px',
+      fontSize: '1rem',
       lineHeight: '150%',
       letterSpacing: '0.15px',
       fontStyle: 'normal',
@@ -156,7 +170,7 @@ const theme:Theme = createTheme({
           background: 'linear-gradient(90deg, #24C1F2 0%, #1DEDD4 100%)',
           borderRadius: '30px',
           height: '60px',
-          fontSize: '24px',
+          fontSize: '1.5rem',
           fontWeight: 500,
           textTransform: 'none',
           paddingLeft: '20px',

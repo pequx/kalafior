@@ -18,12 +18,11 @@ function Hero(dto:HeroDTO): JSX.Element {
             <Paper
                 component='header'
                 sx={{
-                    boxShadow: 'none',
                     ...textAlignHelper('center'),
                     ...paddingHelper({ desktop: [4,4], mobile: [4,4]}),
-                    minHeight: theme.spacing(55)
+                    boxShadow: 'none',
+                    minHeight: theme.spacing(58),
                 }}
-
             >
                 { header ? ( 
                     <Typography variant='h1'>
@@ -36,7 +35,7 @@ function Hero(dto:HeroDTO): JSX.Element {
                     </Typography>
                 ) : null}
                 { sub ? (
-                    <Typography variant='subtitle1'>
+                    <Typography variant='h4'>
                         { sub }
                     </Typography>
                 ) : null}

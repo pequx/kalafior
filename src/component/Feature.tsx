@@ -19,14 +19,14 @@ function Feature(dto:FeatureDTO): JSX.Element {
                 elevation={12}
                 sx={{
                     ...backgroundHelper(background),
-                    ...textAlignHelper('center'),
-                    ...paddingHelper({ desktop: [4,4], mobile: [4,4]}),
+                    ...textAlignHelper('left'),
+                    ...paddingHelper({ desktop: [4,8], mobile: [4,4]}),
 
                     borderRadius: theme.spacing(2),
+                    minHeight: theme.spacing(40),
 
                     '&:hover': {
                         backgroundColor: 'primary.main',
-                        opacity: [0.9, 0.8, 0.7],
                     },
                 }}
             >
