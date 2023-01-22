@@ -1,3 +1,22 @@
+declare module '@mui/material/styles' {
+    interface Palette {
+        gradientGreen: Palette['main'];
+        gradientBlue: Palette['main'];
+        gradientBlueGreen: Palette['main'];
+        gradientDarkBlue: Palette['main'];
+        gradientDarkBlue: Palette['main'];
+        gardientGrey: Palette['main'];
+    }
+    
+    interface PaletteOptions {
+        gradientGreen: PaletteOptions['main'];
+        gradientBlue: PaletteOptions['main'];
+        gradientBlueGreen: PaletteOptions['main'];
+        gradientDarkBlue: PaletteOptions['main'];
+        gardientGrey: PaletteOptions['main'];
+    }
+}
+
 type SizeDTO = {
     desktop: number;
     tablet?: number;

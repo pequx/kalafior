@@ -4,9 +4,10 @@ import '@fontsource/poppins/300.css'
 import '@fontsource/poppins/400.css'
 import '@fontsource/poppins/500.css'
 import '@fontsource/poppins/600.css'
-import { createTheme } from '@mui/material/styles';
+import { Theme, createTheme } from '@mui/material/styles';
+import settings from './config/settings.json'
 
-const theme = createTheme({
+const theme:Theme = createTheme({
   typography: {
     fontFamily: [
       'Poppins',
@@ -87,11 +88,27 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: '#24C1F2',
+      main: settings.color.spoolBlue,
     },
     secondary: {
-      main: '#1DEDD4',
+      main: settings.color.spoolGreen,
+    },
+    gradientGreen: {
+      main: 'radial-gradient(32.18% 80.24% at 100% 0%, rgba(0, 255, 179, 0.3) 0%, rgba(24, 242, 177, 0) 100%), radial-gradient(27.04% 67.42% at 1.15% 98.13%, rgba(207, 216, 220, 0.5) 0%, rgba(87, 98, 112, 0) 100%);'
+    },
+    gradientBlue: {
+      main: 'radial-gradient(32.18% 80.24% at 100% 0%, rgba(35, 179, 229, 0.3) 0%, rgba(35, 179, 229, 0) 100%), radial-gradient(27.04% 67.42% at 1.15% 98.13%, rgba(207, 216, 220, 0.3) 0%, rgba(87, 98, 112, 0) 100%)'
+    },
+    gradientBlueGreen: {
+      main: `linear-gradient(90deg, ${settings.color.spoolGreen} 0%, ${settings.color.spoolBlue} 100%);`
+    },
+    gradientDarkBlue: {
+      main: 'linear-gradient(227.49deg, #23B3E5 15.94%, #576270 84.54%);'
+    },
+    gardientGrey: {
+      main: 'radial-gradient(32.18% 80.24% at 100% 0%, rgba(0, 255, 179, 0.3) 0%, rgba(24, 242, 177, 0) 100%);'
     }
+    
   },
   components: {
     MuiAppBar: {

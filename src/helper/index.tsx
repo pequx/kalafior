@@ -5,7 +5,7 @@ import Appbar from '../component/Appbar';
 import Hero from '../component/Hero';
 import { useContext } from '..';
 import { v4 as uuidv4 } from 'uuid';
-import { Grid, LinearProgress } from '@mui/material';
+import { Grid, LinearProgress, SimplePaletteColorOptions } from '@mui/material';
 import Teaser from '../component/Teaser';
 import Feature from '../component/Feature';
 import Logos from '../component/Logos';
@@ -13,17 +13,37 @@ import People from '../component/People';
 import Posts from '../component/Posts';
 import Footer from '../component/Footer';
 
-export const backgroundHelper = (background:ImageDTO | undefined): any => {
-    if (!background) return null;
 
-    const backgroundPosition = background.align 
-        ? background.align.split('-')
-        : null
+export const backgroundHelper = (dto:ImageDTO | undefined): any => {
+    if (!dto) return null;
 
+    const { image, scale, align } = dto;
+    const getPaletteItem = ():SimplePaletteColorOptions => {
+        switch (image) {
+            case 'gradientGreen':
+                return theme.palette.gradientGreen;
+            case 'gradientBlue':
+                return theme.palette.gradientBlue;
+            case 'gradientBlueGreen':
+                return theme.palette.gradientBlueGreen;
+            case 'gradientDarkBlue':
+                return theme.palette.gradientDarkBlue;
+            case 'gardientGrey':
+                return theme.palette.gardientGrey;
+            default:
+                return theme.palette.primary;
+        }
+    }
+
+    const isImage = image.includes('/')
+    const position = align ? align.split('-') : null
+    
     return {
-        background: '',
-        backgroundPositionX: backgroundPosition ? backgroundPosition[0] : null,
-        backgroundPositionY: backgroundPosition ? backgroundPosition[1] : backgroundPosition,
+        backgroundColor: 'transparent',
+        backgroundSize: '',
+        background: isImage ? image : getPaletteItem()['main'],
+        backgroundPositionX: position ? position[0] : null,
+        backgroundPositionY: position ? position[1] : null,
     }
 }
 

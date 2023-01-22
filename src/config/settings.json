@@ -1,6 +1,10 @@
 {
-    "version": 2,
+    "version": 3,
     "defaultLocale": "en",
+    "color": {
+        "spoolBlue": "#1DEDD4",
+        "spoolGreen": "#24C1F2"
+    },
     "container": {
         "maxWidth": "lg"
     }
