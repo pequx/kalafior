@@ -19,6 +19,7 @@ function App(): JSX.Element {
         <meta name='author' content={meta.author[locale]} />
         <meta name='generator' content={meta.generator[locale]} />
         <meta name='copyright' content={meta.copyright[locale]} />
+        <meta name='keywords' content={meta.keywords[locale]} />
         <meta name='robots' content={meta.robots} />
         <meta name='rating' content={meta.rating} />
         <meta name='twitter:card' content={meta['twitter:card'][locale]} />
