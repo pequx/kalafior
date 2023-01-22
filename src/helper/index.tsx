@@ -47,6 +47,9 @@ export const backgroundHelper = (dto:ImageDTO | undefined): any => {
     }
 }
 
+export const imageHelper = (image: ImageDTO): string => {
+    return `/asset/${image.image}.svg`
+}
 
 export const textAlignHelper = (align: string): any => {
     switch (align) {
@@ -60,7 +63,7 @@ export const textAlignHelper = (align: string): any => {
         case 'left': {
             return {
                 display: 'flex',
-                alignItems: 'left',
+                alignItems: 'center',
                 justifyContent: 'center',
                 flexFlow: 'column'
             }
@@ -75,19 +78,23 @@ export const paddingHelper = (padding: PaddingDTO): any => {
     return {
         paddingTop: { 
             lg: theme.spacing(padding.desktop[0]), 
-            md: theme.spacing(padding.mobile[0]) 
+            md: theme.spacing(padding.desktop[0] / 1), 
+            xs: theme.spacing(padding.mobile[0]) 
         },
         paddingBottom: { 
             lg: theme.spacing(padding.desktop[0]), 
-            md: theme.spacing(padding.mobile[0]) 
+            md: theme.spacing(padding.desktop[0] / 1), 
+            xs: theme.spacing(padding.mobile[0]) 
         },
         paddingLeft: { 
             lg: theme.spacing(padding.desktop[1]), 
-            md: theme.spacing(padding.mobile[1]) 
+            md: theme.spacing(padding.desktop[0] / 1), 
+            xs: theme.spacing(padding.mobile[1]) 
         },
         paddingRight: { 
             lg: theme.spacing(padding.desktop[1]), 
-            md: theme.spacing(padding.mobile[1]) 
+            md: theme.spacing(padding.desktop[0] / 1), 
+            xs: theme.spacing(padding.mobile[1]) 
         },
     }
 }

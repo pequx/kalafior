@@ -19,7 +19,7 @@ function Hero(dto:HeroDTO): JSX.Element {
                 component='header'
                 sx={{
                     ...textAlignHelper('center'),
-                    ...paddingHelper({ desktop: [4,4], mobile: [4,4]}),
+                    ...paddingHelper({ desktop: [4,8], mobile: [4,4]}),
                     boxShadow: 'none',
                     minHeight: theme.spacing(58),
                 }}

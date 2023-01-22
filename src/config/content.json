@@ -53,6 +53,11 @@
                     "image": "gradientGreen",
                     "align": "center"
                 },
+                "image": {
+                    "image": "teaser-1",
+                    "scale": 1,
+                    "align": "top-right"
+                },
                 "size": {
                     "desktop": 12,
                     "mobile": 12
@@ -67,6 +72,11 @@
                     "image": "gradientGreen",
                     "align": "center"
                 },
+                "image": {
+                    "image": "teaser-2",
+                    "scale": 1,
+                    "align": "top-right"
+                },
                 "size": {
                     "desktop": 6,
                     "mobile": 12
@@ -80,6 +90,11 @@
                 "background": {
                     "image": "gradientGreen",
                     "align": "center"
+                },
+                "image": {
+                    "image": "teaser-3",
+                    "scale": 1,
+                    "align": "top-right"
                 },
                 "size": {
                     "desktop": 6,
@@ -109,6 +124,11 @@
                     "image": "gradientBlue",
                     "align": "center"
                 },
+                "image": {
+                    "image": "feature-1",
+                    "scale": 1,
+                    "align": "top-right"
+                },
                 "size": {
                     "desktop": 6,
                     "mobile": 12
@@ -122,6 +142,11 @@
                 "background": {
                     "image": "gradientBlue",
                     "align": "center"
+                },
+                "image": {
+                    "image": "feature-2",
+                    "scale": 1,
+                    "align": "top-right"
                 },
                 "size": {
                     "desktop": 6,
@@ -152,6 +177,11 @@
                     "image": "gradientBlue",
                     "align": "center"
                 },
+                "image": {
+                    "image": "feature-3",
+                    "scale": 1,
+                    "align": "top-right"
+                },
                 "size": {
                     "desktop": 6,
                     "mobile": 12
@@ -180,6 +210,11 @@
                     "image": "gradientGreen",
                     "align": "center"
                 },
+                "image": {
+                    "image": "teaser-4",
+                    "scale": 1,
+                    "align": "top-right"
+                },
                 "size": {
                     "desktop": 6,
                     "mobile": 12
@@ -193,6 +228,11 @@
                 "background": {
                     "image": "gradientGreen",
                     "align": "center"
+                },
+                "image": {
+                    "image": "teaser-5",
+                    "scale": 1,
+                    "align": "top-right"
                 },
                 "size": {
                     "desktop": 6,
@@ -208,6 +248,11 @@
                     "image": "gradientGreen",
                     "align": "center"
                 },
+                "image": {
+                    "image": "teaser-6",
+                    "scale": 1,
+                    "align": "top-right"
+                },
                 "size": {
                     "desktop": 6,
                     "mobile": 12
@@ -221,6 +266,11 @@
                 "background": {
                     "image": "gradientGreen",
                     "align": "center"
+                },
+                "image": {
+                    "image": "teaser-7",
+                    "scale": 1,
+                    "align": "top-right"
                 },
                 "size": {
                     "desktop": 6,
@@ -302,6 +352,11 @@
                     "image": "gardientGrey",
                     "align": "center"
                 },
+                "image": {
+                    "image": "feature-4",
+                    "scale": 1,
+                    "align": "top-right"
+                },
                 "size": {
                     "desktop": 4,
                     "mobile": 12
@@ -320,6 +375,11 @@
                     "image": "gardientGrey",
                     "align": "center"
                 },
+                "image": {
+                    "image": "feature-5",
+                    "scale": 1,
+                    "align": "top-right"
+                },
                 "size": {
                     "desktop": 4,
                     "mobile": 12
@@ -337,6 +397,11 @@
                 "background": {
                     "image": "gardientGrey",
                     "align": "center"
+                },
+                "image": {
+                    "image": "feature-6",
+                    "scale": 1,
+                    "align": "top-right"
                 },
                 "size": {
                     "desktop": 4,

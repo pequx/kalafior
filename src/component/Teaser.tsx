@@ -2,7 +2,8 @@ import React from 'react';
 import { ItemDTO } from '../interface';
 import { Button, Grid, Paper, Typography } from '@mui/material';
 import theme from '../theme';
-import { backgroundHelper, paddingHelper, textAlignHelper } from '../helper';
+import { backgroundHelper, imageHelper, paddingHelper, textAlignHelper } from '../helper';
+import Image from 'mui-image';
 
 
 interface TeaserDTO {
@@ -21,7 +22,7 @@ function Teaser(dto: TeaserDTO): JSX.Element {
                     ...backgroundHelper(background),
                     ...textAlignHelper('center'),
                     ...paddingHelper({ desktop: [4,8], mobile: [4,4]}),
-                    
+
                     borderRadius: theme.spacing(2),
                     minHeight: theme.spacing(40),
 
@@ -30,6 +31,14 @@ function Teaser(dto: TeaserDTO): JSX.Element {
                     },
                 }}
             >
+                { image ? <Image 
+                    src={imageHelper(image)} 
+                    fit='scale-down'
+                    position='relative'
+                    shift='right'
+                    width='10%'
+                    /> 
+                : null }
                 <Typography variant='h3'>
                     { header }
                 </Typography>

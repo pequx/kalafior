@@ -1,8 +1,9 @@
 import React from 'react';
 import { ItemDTO } from '../interface';
 import { Button, Grid, Paper, Typography } from '@mui/material';
-import { backgroundHelper, paddingHelper, textAlignHelper } from '../helper';
+import { backgroundHelper, imageHelper, paddingHelper, textAlignHelper } from '../helper';
 import theme from '../theme';
+import Image from 'mui-image';
 
 
 interface FeatureDTO {
@@ -30,6 +31,14 @@ function Feature(dto:FeatureDTO): JSX.Element {
                     },
                 }}
             >
+                { image ? <Image 
+                    src={imageHelper(image)} 
+                    fit='scale-down'
+                    position='relative'
+                    shift='right'
+                    width='10%'
+                    /> 
+                : null}
                 <Typography variant='h3'>
                     { header }
                 </Typography>
