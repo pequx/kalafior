@@ -1,5 +1,5 @@
 {
-    "version": 4,
+    "version": 5,
     "defaultLocale": "en",
     "color": {
         "spoolBlue": "#1DEDD4",
@@ -7,11 +7,10 @@
     },
     "grid": {
         "spacing": 4,
-        "maxWidth": "lg",
-        "alignItems": "center"
+        "maxWidth": "lg"
     },
     "container": {
-        "maxWidth": false
+        "maxWidth": "xl"
     },
     "meta": {
         "charset": "utf-8",

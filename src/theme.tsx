@@ -111,6 +111,14 @@ const theme:Theme = createTheme({
     
   },
   components: {
+    MuiContainer: {
+      styleOverrides: {
+        root: {
+          display: 'grid',
+          justifyItems: 'center'
+        }
+      }
+    },
     MuiPaper: {
       styleOverrides: {
         root: {

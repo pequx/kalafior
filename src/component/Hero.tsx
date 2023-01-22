@@ -21,7 +21,7 @@ function Hero(dto:HeroDTO): JSX.Element {
                     boxShadow: 'none',
                     ...textAlignHelper('center'),
                     ...paddingHelper({ desktop: [4,4], mobile: [4,4]}),
-                    minHeight: theme.spacing(55),
+                    minHeight: theme.spacing(55)
                 }}
 
             >

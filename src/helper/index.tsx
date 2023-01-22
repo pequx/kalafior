@@ -91,7 +91,6 @@ export const Component = (props: ComponentDTO):JSX.Element => {
                 component='section'
                 spacing={settings.grid.spacing} 
                 maxWidth={settings.grid.maxWidth}
-                alignContent={settings.grid.alignItems}
             >
                 {items.map((item: string) => 
                     <Hero item={content[parent][item][locale]} key={uuidv4()}/>
@@ -102,7 +101,6 @@ export const Component = (props: ComponentDTO):JSX.Element => {
                 component='section'
                 spacing={settings.grid.spacing}
                 maxWidth={settings.grid.maxWidth}
-                alignContent={settings.grid.alignItems}
             >
                 {items.map((item: string) => 
                     <Teaser item={content[parent][item][locale]} key={uuidv4()}/>
@@ -112,6 +110,7 @@ export const Component = (props: ComponentDTO):JSX.Element => {
             return <Grid container
                 component='section'
                 spacing={settings.grid.spacing}
+                maxWidth={settings.grid.maxWidth}
             >
                 {items.map((item: string) => 
                     <Feature item={content[parent][item][locale]} key={uuidv4()}/>
@@ -121,6 +120,7 @@ export const Component = (props: ComponentDTO):JSX.Element => {
             return <Grid container 
                 component='section'
                 spacing={settings.grid.spacing}
+                maxWidth={settings.grid.maxWidth}
             >
                 {items.map((item: string) => 
                     <Logos items={content[parent][item][locale]} key={uuidv4()}/>
@@ -130,6 +130,7 @@ export const Component = (props: ComponentDTO):JSX.Element => {
             return <Grid container 
                 component='section'
                 spacing={settings.grid.spacing}
+                maxWidth={settings.grid.maxWidth}
             >
                 {items.map((item: string) => 
                     <People items={content[parent][item][locale]} key={uuidv4()}/>
@@ -139,6 +140,7 @@ export const Component = (props: ComponentDTO):JSX.Element => {
             return <Grid container 
                 component='section'
                 spacing={settings.grid.spacing}
+                maxWidth={settings.grid.maxWidth}
             >
                 {items.map((item: string) => 
                     <Posts items={content[parent][item][locale]} key={uuidv4()}/>
