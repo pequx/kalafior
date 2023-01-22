@@ -8,7 +8,7 @@ function App() {
   const { settings } = context
 
   return (
-    <Container maxWidth={settings.container.maxWidth}>
+    <Container maxWidth={settings.container.maxWidth} component='main'>
       <Layout type='homepage' />
     </Container>
   );

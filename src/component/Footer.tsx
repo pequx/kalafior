@@ -1,5 +1,6 @@
 import React from 'react';
 import Box from '@mui/material/Box';
+import { Paper } from '@mui/material';
 
 interface FooterDTO {
     header?: String;
@@ -13,7 +14,8 @@ function Footer( dto:FooterDTO = {
     const { header, sub } = dto
 
     return (
-        <Box
+        <Paper
+            component='footer'
             sx={{
                 width: 300,
                 height: 300,
@@ -26,7 +28,7 @@ function Footer( dto:FooterDTO = {
         >
             { header }
             { sub }
-        </Box>       
+        </Paper>       
     )
 }
 

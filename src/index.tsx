@@ -9,6 +9,7 @@ import content from './config/content.json';
 import layout from './config/layout.json';
 import settings from './config/settings.json'
 import { getUserLocale } from 'get-user-locale';
+import { v4 as uuidv4 } from 'uuid';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

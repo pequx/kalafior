@@ -81,43 +81,65 @@ export const paddingHelper = (padding: PaddingDTO): any => {
 export const Component = (props: ComponentDTO):JSX.Element => {
     const { type, items, parent } = props;
     const context = useContext();
-    const { content, locale } = context;
+    const { content, locale, settings } = context;
 
     switch (type) {
         case 'Appbar':
             return <Appbar items={content[parent][items[0]][locale]} key={uuidv4()} />
         case 'Hero':
-            return <Grid container>
+            return <Grid container 
+                component='section'
+                spacing={settings.grid.spacing} 
+                maxWidth={settings.grid.maxWidth}
+                alignContent={settings.grid.alignItems}
+            >
                 {items.map((item: string) => 
                     <Hero item={content[parent][item][locale]} key={uuidv4()}/>
                 )}
             </Grid>
         case 'Teaser':
-            return <Grid container>
+            return <Grid container 
+                component='section'
+                spacing={settings.grid.spacing}
+                maxWidth={settings.grid.maxWidth}
+                alignContent={settings.grid.alignItems}
+            >
                 {items.map((item: string) => 
                     <Teaser item={content[parent][item][locale]} key={uuidv4()}/>
                 )}
             </Grid>
         case 'Feature':
-            return <Grid container>
+            return <Grid container
+                component='section'
+                spacing={settings.grid.spacing}
+            >
                 {items.map((item: string) => 
                     <Feature item={content[parent][item][locale]} key={uuidv4()}/>
                 )}
             </Grid>
         case 'Logos':
-            return <Grid container>
+            return <Grid container 
+                component='section'
+                spacing={settings.grid.spacing}
+            >
                 {items.map((item: string) => 
                     <Logos items={content[parent][item][locale]} key={uuidv4()}/>
                 )}
             </Grid>
         case 'People':
-            return <Grid container>
+            return <Grid container 
+                component='section'
+                spacing={settings.grid.spacing}
+            >
                 {items.map((item: string) => 
                     <People items={content[parent][item][locale]} key={uuidv4()}/>
                 )}
             </Grid>
         case 'Posts':
-            return <Grid container>
+            return <Grid container 
+                component='section'
+                spacing={settings.grid.spacing}
+            >
                 {items.map((item: string) => 
                     <Posts items={content[parent][item][locale]} key={uuidv4()}/>
                 )}

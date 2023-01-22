@@ -111,6 +111,13 @@ const theme:Theme = createTheme({
     
   },
   components: {
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          background: 'transparent',
+        }
+      }
+    },
     MuiAppBar: {
       styleOverrides: {
         root: {

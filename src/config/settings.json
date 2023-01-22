@@ -1,11 +1,16 @@
 {
-    "version": 3,
+    "version": 4,
     "defaultLocale": "en",
     "color": {
         "spoolBlue": "#1DEDD4",
         "spoolGreen": "#24C1F2"
     },
+    "grid": {
+        "spacing": 4,
+        "maxWidth": "lg",
+        "alignItems": "center"
+    },
     "container": {
-        "maxWidth": "lg"
+        "maxWidth": false
     }
 }

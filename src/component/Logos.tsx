@@ -2,7 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import { v4 as uuidv4 } from 'uuid';
 import { LogoDTO } from '../interface';
-import { Grid } from '@mui/material';
+import { Grid, Paper } from '@mui/material';
 import Image from 'mui-image';
 
 
@@ -20,7 +20,8 @@ function Logos(dto:LogosDTO): JSX.Element {
         
                 return (
                     <Grid item lg={size.desktop} sm={size.mobile} key={uuidv4()}>
-                        <Box
+                        <Paper
+                            component='figure'
                             sx={{
                                 backgroundColor: 'primary.dark',
                                 
@@ -31,7 +32,7 @@ function Logos(dto:LogosDTO): JSX.Element {
                             }}
                         >
                             <Image src={image} showLoading={true} />
-                        </Box>
+                        </Paper>
                     </Grid>
         
                 )

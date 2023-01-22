@@ -21,6 +21,7 @@ function People(dto:PeopleDTO): JSX.Element {
                 return (
                     <Grid item key={uuidv4()} lg={size.desktop} sm={size.mobile} component='figure'>
                         <Paper
+                            component='figure'
                             elevation={12}
                             sx={{
                                 ...textAlignHelper('center'),

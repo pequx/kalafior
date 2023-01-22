@@ -15,6 +15,7 @@ function Teaser(dto: TeaserDTO): JSX.Element {
     return (
         <Grid item lg={size.desktop} sm={size.mobile}>
             <Paper
+                component='article'
                 elevation={12}
                 sx={{
                     ...backgroundHelper(background),

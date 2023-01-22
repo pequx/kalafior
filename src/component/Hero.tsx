@@ -1,7 +1,7 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import { ItemDTO } from '../interface';
-import { Button, Grid, Typography } from '@mui/material';
+import { Button, Grid, Paper, Typography } from '@mui/material';
 import theme from '../theme';
 import { paddingHelper, textAlignHelper } from '../helper';
 
@@ -15,9 +15,10 @@ function Hero(dto:HeroDTO): JSX.Element {
 
     return (
         <Grid item lg={size.desktop} sm={size.mobile}>
-            <Box
-                component="figure"
+            <Paper
+                component='header'
                 sx={{
+                    boxShadow: 'none',
                     ...textAlignHelper('center'),
                     ...paddingHelper({ desktop: [4,4], mobile: [4,4]}),
                     minHeight: theme.spacing(55),
@@ -44,7 +45,7 @@ function Hero(dto:HeroDTO): JSX.Element {
                         { cta.name }
                     </Button>
                 ) : null}
-            </Box>
+            </Paper>
         </Grid>
     );
 }

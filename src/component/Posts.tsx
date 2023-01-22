@@ -21,7 +21,7 @@ function Posts(dto:PostsDTO): JSX.Element {
                 return (
                     <Grid item lg={size.desktop} sm={size.mobile} key={uuidv4()}>
                         <Paper 
-                            key={uuidv4()}
+                            component='figure'
                             elevation={12}
                             sx={{
                                 ...textAlignHelper('center'),
