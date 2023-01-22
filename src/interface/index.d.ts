@@ -100,6 +100,14 @@ export type ViewDTO = {
     items: Array<string>;
 }
 
+export type VideoDTO = {
+    video: string,
+    scale?: number,
+    align?: Align;
+    size: SizeDTO;
+    volume?: number;
+}
+
 // export type ContentContextDTO = {
 //     version: number;
 //     [string: index]: any

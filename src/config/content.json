@@ -1,6 +1,16 @@
 {
-    "version": 4,
+    "version": 5,
     "homepage": {
+        "video-1": {
+            "en": {
+                "video": "FNAudio80001-0909.mp4",
+                "volume": 0.5,
+                "size": {
+                    "desktop": 12,
+                    "mobile": 12
+                }
+            }
+        },
         "appbar-1": {
             "en": [
                 {

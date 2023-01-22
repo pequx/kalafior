@@ -4,6 +4,7 @@ import { Layout } from './helper';
 import { useContext } from '.';
 import {Helmet} from "react-helmet";
 
+
 function App(): JSX.Element {
   const context = useContext();
   const { settings, locale } = context
@@ -33,8 +34,8 @@ function App(): JSX.Element {
         <meta property='og:type' content='website' />
         <meta charSet={settings.meta.charset} />
       </Helmet>
-      <Container maxWidth={settings.container.maxWidth} component='main'>
-        <Layout type='homepage' />
+      <Container maxWidth={settings.container.maxWidth} component='main' disableGutters>
+          <Layout type='homepage' />
       </Container>
     </React.Fragment>
   );

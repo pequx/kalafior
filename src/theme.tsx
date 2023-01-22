@@ -133,6 +133,9 @@ const theme:Theme = createTheme({
         }
       }
     },
+    MuiGrid: {
+      
+    },
     MuiPaper: {
       styleOverrides: {
         root: {

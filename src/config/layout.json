@@ -1,6 +1,11 @@
 {
-    "version": 1,
+    "version": 2,
     "homepage": [
+        {  
+            "order": 0,
+            "component": "Player",
+            "items": ["video-1"]
+        },
         {  
             "order": 1,
             "component": "Appbar",

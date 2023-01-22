@@ -1,5 +1,5 @@
 import React, { Context } from 'react';
-import { ComponentDTO, ImageDTO, LayoutDTO, PaddingDTO, ViewDTO } from "../interface";
+import { ComponentDTO, ImageDTO, LayoutDTO, PaddingDTO, VideoDTO, ViewDTO } from "../interface";
 import theme from "../theme";
 import Appbar from '../component/Appbar';
 import Hero from '../component/Hero';
@@ -12,7 +12,7 @@ import Logos from '../component/Logos';
 import People from '../component/People';
 import Posts from '../component/Posts';
 import Footer from '../component/Footer';
-
+import Player from '../component/Player';
 
 export const backgroundHelper = (dto:ImageDTO | undefined): any => {
     if (!dto) return null;
@@ -47,8 +47,12 @@ export const backgroundHelper = (dto:ImageDTO | undefined): any => {
     }
 }
 
-export const imageHelper = (image: ImageDTO): string => {
-    return `/asset/${image.image}.svg`
+export const imageHelper = (dto: ImageDTO): string => {
+    return `/asset/${dto.image}.svg`
+}
+
+export const videoHelper = (dto: VideoDTO): string => {
+    return `/asset/${dto.video}`
 }
 
 export const textAlignHelper = (align: string): any => {
@@ -105,8 +109,17 @@ export const Component = (props: ComponentDTO):JSX.Element => {
     const { content, locale, settings } = context;
 
     switch (type) {
+        case 'Player':
+            return <Grid container
+                component='section'
+                spacing={settings.grid.spacing} 
+                >
+                    {items.map((item: string) => 
+                        <Player item={content[parent][item][locale]} key={uuidv4()} />
+                    )}
+                </Grid>
         case 'Appbar':
-            return <Appbar items={content[parent][items[0]][locale]} key={uuidv4()} />
+            return <Appbar items={content[parent][items[0]][locale]} />
         case 'Hero':
             return <Grid container 
                 component='section'
@@ -122,6 +135,9 @@ export const Component = (props: ComponentDTO):JSX.Element => {
                 component='section'
                 spacing={settings.grid.spacing}
                 maxWidth={settings.grid.maxWidth}
+                sx={{
+                    ...paddingHelper({ desktop: [0,0], mobile: [3,3]}),
+                }}
             >
                 {items.map((item: string) => 
                     <Teaser item={content[parent][item][locale]} key={uuidv4()}/>
@@ -132,6 +148,9 @@ export const Component = (props: ComponentDTO):JSX.Element => {
                 component='section'
                 spacing={settings.grid.spacing}
                 maxWidth={settings.grid.maxWidth}
+                sx={{
+                    ...paddingHelper({ desktop: [0,0], mobile: [3,3]}),
+                }}
             >
                 {items.map((item: string) => 
                     <Feature item={content[parent][item][locale]} key={uuidv4()}/>
@@ -142,6 +161,9 @@ export const Component = (props: ComponentDTO):JSX.Element => {
                 component='section'
                 spacing={settings.grid.spacing}
                 maxWidth={settings.grid.maxWidth}
+                sx={{
+                    ...paddingHelper({ desktop: [0,0], mobile: [3,3]}),
+                }}
             >
                 {items.map((item: string) => 
                     <Logos items={content[parent][item][locale]} key={uuidv4()}/>
@@ -152,6 +174,9 @@ export const Component = (props: ComponentDTO):JSX.Element => {
                 component='section'
                 spacing={settings.grid.spacing}
                 maxWidth={settings.grid.maxWidth}
+                sx={{
+                    ...paddingHelper({ desktop: [0,0], mobile: [3,3]}),
+                }}
             >
                 {items.map((item: string) => 
                     <People items={content[parent][item][locale]} key={uuidv4()}/>
@@ -162,6 +187,9 @@ export const Component = (props: ComponentDTO):JSX.Element => {
                 component='section'
                 spacing={settings.grid.spacing}
                 maxWidth={settings.grid.maxWidth}
+                sx={{
+                    ...paddingHelper({ desktop: [0,0], mobile: [3,3]}),
+                }}
             >
                 {items.map((item: string) => 
                     <Posts items={content[parent][item][locale]} key={uuidv4()}/>
